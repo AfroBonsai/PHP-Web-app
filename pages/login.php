@@ -11,7 +11,7 @@
         <p>Email: <input type="text" name="Email" /></p>
         <p>Contraseña: <input type="password" name="Contraseña" /></p>
         <style>.button{cursor: pointer}</style>
-        <p><input type="submit" class="button"/></p>
+        <p><input type="submit" value="Login" class="button"/></p>
     </form>
 </body>
 </html>
