@@ -1,8 +1,23 @@
+
+/* HEADER */
 .Header{
 background-color: #c06868;
+  height: 10vh;
+display: flex;
+justify-content: right;
+margin : 0,2vh ;
 }
-
-.Login{
+.oro{
+    height: 0.7vh;
+    background-color: goldenrod;
+}
+.asd{
+    margin-top: 1vh;
+    margin-right: 1vw;
+    border-radius: 1em;
+}
+  
+    .Login{
     display: flex;
     flex-direction: column;
     align-items: center;
