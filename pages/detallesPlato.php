@@ -20,4 +20,9 @@ echo '</ul>';
 
 echo '<a href="./cartaPlatos.php">atras</a>'
 
+echo '<a href="../index.php">
+<style>button{cursor: pointer}</style>
+<button type="button">Volver</button>
+</a>';
+
 ?>

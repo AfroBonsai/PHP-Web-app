@@ -16,3 +16,68 @@ margin : 0,2vh ;
     margin-right: 1vw;
     border-radius: 1em;
 }
+/* REGISTRO */
+.formularioRegistro{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D81E5B;
+}
+
+.h1titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    margin-top: 2em;
+    text-shadow: rgb(163, 163, 163) 0.1em 0.1em 0.3em;
+}
+
+.botonRegistrarse{
+    height: 2.1em;
+    width: 7em;
+    border-radius: 0.5em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.4s;
+    justify-content: center;
+    background-color: #D81E5B;
+}
+.botonRegistrarse:hover{
+     background-image: linear-gradient( rgb(197 197 197 / 60%), rgb(229 225 225 / 60%) ), url(../../assets/img/fondopelicula.jpg);
+    transform: scale(1.1);
+    transition-duration: 1.1s;
+    color: black;
+}
+
+.botonRe{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetaRegistro{
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    background-color: #2C2D2E;border-radius: 1.5em;
+    align-content: center;
+    height: 35em;
+    margin-top: 10vh;
+    font-weight: 900;
+}
+
+body{
+    background-color: #D81E5B;
+}
