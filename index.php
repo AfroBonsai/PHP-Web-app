@@ -10,21 +10,21 @@
 <body>
 <div class="Header">
 <?php
-echo '<a href="http://localhost/php-dev/PHP-WEB-APP/pages/cartaPlatos.php">
+echo '<a href="./pages/cartaPlatos.php">
   <style>
   button{cursor: pointer}
   </style>
   <button class="asd" type="button">Carta Platos</button>
   </a>';
-  echo '<a href="http://localhost/php-dev/PHP-WEB-APP/pages/login.php">
+  echo '<a href="./pages/login.php">
   <style>button{cursor: pointer}</style>
   <button class="asd" type="button">Login</button>
   </a>';
-  echo '<a href="http://localhost/php-dev/PHP-WEB-APP/pages/perfilUsuario.php">
+  echo '<a href="./pages/perfilUsuario.php">
   <style>button{cursor: pointer}</style>
   <button class="asd" type="button">Perfil</button>
   </a>';
-  echo '<a href="http://localhost/php-dev/PHP-WEB-APP/pages/registroUsuario.php">
+  echo '<a href="./pages/registroUsuario.php">
   <style>button{cursor: pointer}</style>
   <button class="asd" type="button">Registro</button>
   </a>';

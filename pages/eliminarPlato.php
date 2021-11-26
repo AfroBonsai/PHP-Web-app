@@ -6,6 +6,6 @@
 
     echo "<p> Plato eliminado con exito </p>";
 
-    echo '<a href="../pages/cartaPlatos.php">Atras</a>';
+    echo '<a href="./cartaPlatos.php">Atras</a>';
 
 ?>

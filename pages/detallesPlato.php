@@ -3,7 +3,7 @@
 echo '<h1>Detalle de ' . ($_GET["titulo"]) . '</h1>';
 
 //Conexion con base de datos
-require './database/db_connect.php';
+require '../database/db_connect.php';
 $mysqli = conectar();
 
 // Consulta
@@ -18,6 +18,6 @@ echo '<li>Numero de comensales: '.$reg['comensales'].'</li>';
 echo '<li>Tipo de Plato: '.$reg['tipo'].'</li>';
 echo '</ul>';
 
-echo '<a href="http://localhost/php-dev/menu/index.php">atras</a>'
+echo '<a href="./cartaPlatos.php">atras</a>'
 
 ?>
