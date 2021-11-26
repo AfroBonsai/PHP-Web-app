@@ -16,7 +16,16 @@
             <option value="3">Postre</option></select>
         </p>
         <style>.button{cursor: pointer}</style>
-        <p><input type="submit" value="toritlla" class="button"/></p>
+        <p><input type="submit" value="Crear" class="button"/></p>
     </form>
 </body>
 </html>
+
+
+<!---------- PHP ENDPOINTS CREACIÓN PLATOS ------------>
+
+<?php
+
+$mysqli->query("INSERT INTO plato (titulo, comensales, tipo) VALUES (".$_POST['titulo'].",". $_POST['comensales'].",". $_POST['tipo'].");");
+
+?>
