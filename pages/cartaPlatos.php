@@ -12,13 +12,14 @@ $resultado = $mysqli->query("SELECT id, titulo FROM plato");
 echo '<ol>';
 while ($reg = $resultado->fetch_assoc()) {
     echo '<li>';
-    echo '<a href="http://localhost/dev/PHP-Web-app/pages/detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a>';
+    echo '<a href="./detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a>';
+    echo '<a class="boton" href="./eliminarPlato.php?id=' . $reg['id'] .'"> ELIMINAR</a>';
+    echo '<a class="boton" href="./editarPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '"> EDITAR</a>';
     echo '</li>';
 }
 echo '</ol>';
 
-echo '<a href="localhost/dev/PHP-Web-app/pages/crearPlato.html">
-<style>button{cursor: pointer}</style>
+echo '<a href="./crearPlato.html">
 <button>Crear plato</button>
 </a>';
 
