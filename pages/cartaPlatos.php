@@ -8,6 +8,7 @@ $mysqli = conectar();
 //consulta bbdd
 $resultado = $mysqli->query("SELECT id, titulo FROM plato");
 
+
 //Imprime el resultado
 echo '<ol>';
 while ($reg = $resultado->fetch_assoc()) {

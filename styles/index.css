@@ -3,16 +3,26 @@
 .Header{
 background-color: #c06868;
 height: 10vh;
+width: 100vw;
 display: flex;
 justify-content: right;
-margin : 0,2vh ;
+margin : 0,2vh;
+border-radius: 1em;
 }
 .oro{
+    width: 100vw;
     height: 0.7vh;
     background-color: goldenrod;
-}
-.asd{
-    margin-top: 1vh;
-    margin-right: 1vw;
     border-radius: 1em;
+}
+/* BODY */
+.asd{
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    margin: 1em;
+}
+.boton{
+    border-radius: 1em;
+    cursor: pointer;
 }

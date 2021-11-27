@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="plato.php" method="post">
+    <form action="perfilUsuario.php" method="post">
         <p>Email: <input type="text" name="Email" /></p>
         <p>Contraseña: <input type="password" name="Contraseña" /></p>
         <style>.button{cursor: pointer}</style>
