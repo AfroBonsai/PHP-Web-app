@@ -18,9 +18,7 @@ echo '<li>Numero de comensales: '.$reg['comensales'].'</li>';
 echo '<li>Tipo de Plato: '.$reg['tipo'].'</li>';
 echo '</ul>';
 
-echo '<a href="./cartaPlatos.php">atras</a>'
-
-echo '<a href="../index.php">
+echo '<a href="./cartaPlatos.php">
 <style>button{cursor: pointer}</style>
 <button type="button">Volver</button>
 </a>';

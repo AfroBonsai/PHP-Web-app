@@ -17,6 +17,7 @@ echo '<li>Identificador: '.$reg['id'].'</li>';
 echo '<li>Nombre: '.$reg['nombre'].'</li>';
 echo '<li>Correo: '.$reg['email'].'</li>';
 echo '<li>Contraseña: '.$reg['contraseña'].'</li>';
+echo '<li>Acceso administrador: '.$reg['accesoAdmin'].'</li>';
 
 echo '</ul>';
 
