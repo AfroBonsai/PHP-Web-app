@@ -1,8 +1,8 @@
 <?php
-      session_start();
-      if (!isset($_SESSION['accesoAdmin'])) {
+session_start();
+if (!isset($_SESSION['accesoAdmin'])) {
 
-        echo '
+  echo '
             <!DOCTYPE html>
             <html lang="en">
 
@@ -10,21 +10,20 @@
               <meta charset="UTF-8">
               <meta http-equiv="X-UA-Compatible" content="IE=edge">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <link rel="stylesheet" href="http://localhost:80/PHP-Web-app/styles/index.css">
+              <link rel="stylesheet" href="http://localhost:80/dev/PHP-Web-app/styles/index.css">
               <title>Document</title>
             </head>
 
             <body>
               <div class="header flex">
-                <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/usuarios/registroUsuario.php">Registrarse</a>;
+                <a class="boton flex" href="http://localhost:80/dev/PHP-Web-app/pages/usuarios/registroUsuario.php">Registrarse</a>
               </div>
               <div class="oro"></div>
             </body>
             ';
+} else if ($_SESSION['accesoAdmin'] === 0) {
 
-    } else if ($_SESSION['accesoAdmin'] === 0) {
-
-        echo '
+  echo '
             <!DOCTYPE html>
             <html lang="en">
 
@@ -32,23 +31,22 @@
               <meta charset="UTF-8">
               <meta http-equiv="X-UA-Compatible" content="IE=edge">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <link rel="stylesheet" href="http://localhost:80/PHP-Web-app/styles/index.css">
+              <link rel="stylesheet" href="http://localhost:80/dev/PHP-Web-app/styles/index.css">
               <title>Document</title>
             </head>
 
             <body>
               <div class="header flex">
-                <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/user/cartaPlatos.php">Carta</a>
-                <a class="boton flex"href="http://localhost:80/PHP-Web-app/pages/usuarios/perfilUsuario.php">Perfil</a>
-                <a class="boton flex"href="http://localhost:80/PHP-Web-app/pages/usuarios/logout.php">Cerrar Sesión</a>
+                <a class="boton flex" href="http://localhost:80/dev/PHP-Web-app/pages/user/cartaPlatos.php">Carta</a>
+                <a class="boton flex"href="http://localhost:80/dev/PHP-Web-app/pages/usuarios/perfilUsuario.php">Perfil</a>
+                <a class="boton flex"href="http://localhost:80/dev/PHP-Web-app/pages/usuarios/logout.php">Cerrar Sesión</a>
               </div>
               <div class="oro"></div>
             </body>
             ';
+} else {
 
-    } else {
-
-      echo '
+  echo '
             <!DOCTYPE html>
             <html lang="en">
 
@@ -56,21 +54,19 @@
               <meta charset="UTF-8">
               <meta http-equiv="X-UA-Compatible" content="IE=edge">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <link rel="stylesheet" href="http://localhost:80/PHP-Web-app/styles/index.css">
+              <link rel="stylesheet" href="http://localhost:80/dev/PHP-Web-app/styles/index.css">
               <title>Document</title>
             </head>
 
             <body>
               <div class="header flex">
-                <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/platos/cartaPlatos.php">Platos</a>
-                <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/usuarios/mostrarUsuarios.php">Usuarios</a>
-                <a class="boton flex"href="http://localhost:80/PHP-Web-app/pages/usuarios/perfilUsuario.php">Perfil</a>
-                <a class="boton flex"href="http://localhost:80/PHP-Web-app/pages/usuarios/logout.php">Cerrar Sesión</a>
+                <a class="boton flex" href="http://localhost:80/dev/PHP-Web-app/pages/ingredientes/mostrarIngrediente.php">Ingredientes</a>
+                <a class="boton flex" href="http://localhost:80/dev/PHP-Web-app/pages/platos/cartaPlatos.php">Platos</a>
+                <a class="boton flex" href="http://localhost:80/dev/PHP-Web-app/pages/usuarios/mostrarUsuarios.php">Usuarios</a>
+                <a class="boton flex"href="http://localhost:80/dev/PHP-Web-app/pages/usuarios/perfilUsuario.php">Perfil</a>
+                <a class="boton flex"href="http://localhost:80/dev/PHP-Web-app/pages/usuarios/logout.php">Cerrar Sesión</a>
               </div>
               <div class="oro"></div>
             </body>
             ';
-
-    }
-
-?>
+}

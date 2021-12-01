@@ -25,6 +25,7 @@
                     </tr>
             ';
     while ($reg = $resultado->fetch_assoc()) {
+        
         echo '
             <tr>
                 <td><a href="./detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a></td>
