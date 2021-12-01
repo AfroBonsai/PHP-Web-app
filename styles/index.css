@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  font-family: "Open Sans", serif;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: none;
+}
+a:hover {
+  color: black;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #c06868;
+  height: 10vh;
+  justify-content: right;
+}
+
+.oro {
+  height: 0.7vh;
+  background-color: goldenrod;
+}
+
+.boton {
+  height: 1.5em;
+  width: 8em;
+  background-color: grey;
+  border-radius: 1em;
+  margin: 1em;
+  color: white;
+  outline: 1px solid white;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  transition: 0.3s;
+  background-color: darkgrey;
+}
+
+.peq {
+  font-size: 0.7em;
+}
+
+.main {
+  height: 85vh;
+}
+
+.form {
+  padding: 2em;
+  background-color: #c06868;
+  border-radius: 0.3em;
+  border: 1px solid black;
+}
+
+.form input,
+.form select {
+  margin: 1em;
+  border-radius: 0.3em;
+  height: 2em;
+  width: 15em;
+  border: none;
+  outline: 1px solid black;
+}
+
+.form h1 {
+  color: white;
+  margin-top: 0;
+}
+
+.error {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 2px solid white;
+  border-collapse: collapse;
+  padding: 1em;
+  color: white;
+}
