@@ -2,7 +2,7 @@
 function conectar(){
     //conexion con la base de datos
 
-$mysqli = new mysqli ("localhost:6666", "root", "rootroot", "restaurante"); 
+$mysqli = new mysqli ("eu-cdbr-west-01.cleardb.com:3306", "b1c66af0b95655", "0182c2e6", "heroku_aa142db5d8feb81"); 
 //Control de errores
 if ($mysqli->connect_errno) {
 echo "Falló la conexión con MySQL: (" . $mysqli->connect_errno . ") "
