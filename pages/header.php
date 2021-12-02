@@ -64,6 +64,7 @@ session_start();
               <div class="header flex">
                 <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/platos/cartaPlatos.php">Platos</a>
                 <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/usuarios/mostrarUsuarios.php">Usuarios</a>
+                <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/ingredientes/mostrarIngrediente.php">Ingredientes</a>
                 <a class="boton flex"href="http://localhost:80/PHP-Web-app/pages/usuarios/perfilUsuario.php">Perfil</a>
                 <a class="boton flex"href="http://localhost:80/PHP-Web-app/pages/usuarios/logout.php">Cerrar Sesión</a>
               </div>
