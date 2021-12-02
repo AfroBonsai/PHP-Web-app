@@ -2,7 +2,7 @@
 <!-- mysql://b1c66af0b95655:0182c2e6@eu-cdbr-west-01.cleardb.com/heroku_aa142db5d8feb81?reconnect=true -->
 
 <?php
-$url = parse_url(getenv("mysql://b1c66af0b95655:0182c2e6@eu-cdbr-west-01.cleardb.com/heroku_aa142db5d8feb81?reconnect=true"));
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $server = $url["eu-cdbr-west-01.cleardb.com"];
 $username = $url["b1c66af0b95655"];
