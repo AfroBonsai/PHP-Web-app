@@ -13,6 +13,7 @@ return $mysqli;
 ?>
 
 <!--  
+                         mysql://b1c66af0b95655:0182c2e6@eu-cdbr-west-01.cleardb.com/heroku_aa142db5d8feb81?reconnect=true
 $url = parse_url(getenv("mysql://b1c66af0b95655:0182c2e6@eu-cdbr-west-01.cleardb.com/heroku_aa142db5d8feb81?reconnect=true"));
 
 $server = $url["host"];
