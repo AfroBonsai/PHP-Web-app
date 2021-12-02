@@ -17,7 +17,7 @@
 ?>
 
         <label for="titulo">Título</label>
-        <input type="text" name="titulo" value="<?php echo $titulo;?>" pattern="^[A-Za-z]{3,16}$" title="Min. 3 caracteres y solo admite letras" required/>
+        <input type="text" name="titulo" value="<?php echo $titulo;?>" pattern="^[A-Za-z0-9 ]{3,40}$" title="Min. 3 caracteres y solo admite letras" required/>
         <label for="comensales">Comensales</label>
         <input type="number" name="comensales" value="<?php echo $comensales;?>" min="1" max="9" required/>
         <label for="tipo">Tipo</label>

@@ -15,9 +15,8 @@
     $cantidad=($_GET["cantidad"]);
 
 ?>
-
         <label for="nombre">Ingrediente</label>
-        <input type="text" name="nombre" value="<?php echo $nombre;?>" pattern="^[A-Za-z0-9]{3,30}$" title="Min. 3 caracteres y sin caracteres especiales" required/>
+        <input type="text" name="nombre" value="<?php echo $nombre;?>" pattern="^[A-Za-z0-9 ]{3,30}$" title="Min. 3 caracteres y sin caracteres especiales" required/>
         <label for="cantidad">Cantidad</label>
         <input type="number" name="cantidad" value="<?php echo $cantidad;?>" min="1" required/>
         <input type="hidden" name="id" value="<?php echo $id;?>" />

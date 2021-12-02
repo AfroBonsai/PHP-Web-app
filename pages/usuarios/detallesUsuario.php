@@ -4,13 +4,7 @@
     if ((!isset($_SESSION['accesoAdmin'])) || ($_SESSION['accesoAdmin'] === 0) ) {
             header('Location: ../../index.php');    
         }
-
-    echo '
-        <div class="main flex">
-            <div class="form flexColumn">
-                <h1>Detalle de ' . ($_GET["nombre"]) . '</h1>
-    ';
-
+    
     //Conexion con base de datos
     require '../../database/db_connect.php';
     $mysqli = conectar();
@@ -21,7 +15,10 @@
 
     //Muestra Datos
 
-    echo '
+    echo '   
+        <div class="main flex">
+            <div class="form flexColumn">
+                <h1>Detalle de ' . ($_GET["nombre"]) . '</h1>   
                 <ul>
                     <li>Id: '.$reg['id'].'</li>
                     <li>Nombre: '.$reg['nombre'].'</li>
@@ -32,5 +29,4 @@
             </div>
         </div>
         ';
-
 ?>

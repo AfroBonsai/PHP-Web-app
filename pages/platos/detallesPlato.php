@@ -6,33 +6,16 @@
     require '../../database/db_connect.php';
     $mysqli = conectar();
 
-    // Consulta
-         
-    $res = $mysqli->query("SELECT
-    plato.id,
-    plato.titulo,
-    plato.comensales,
-    plato.tipo,
-    ingrediente.id,
-    ingrediente.nombre,
-    ingrediente.cantidad
-    FROM plato
-    JOIN plato_ingrediente
-    ON plato.id = plato_ingrediente.PlatoId
-    JOIN ingrediente
-    ON ingrediente.id = plato_ingrediente.IngredienteId");
-  
+    // Consulta  
+    
+    $res = $mysqli->query("SELECT * FROM plato WHERE id=".$_GET["id"]);
+    
 
     $reg=$res->fetch_assoc();
 
-    var_dump($reg);
-   
-    //Muestra Datos
+  //Muestra Datos
 
     echo '
-
-
-
     
     <div class="main flexColumn">
         <div class="form flexColumn">
@@ -44,7 +27,40 @@
                     <li>Tipo de Plato: '.$reg['tipo'].'</li>
                 </ul>
                                 
-                <table>
+                
+                
+                <a class="boton flex" href="./cartaPlatos.php">atras</a>
+            </div>
+
+        </div>
+        ';
+
+
+// FUNCIONES EN PRUEBAS
+
+
+       // var_dump($reg);
+      
+    
+/*
+$id = $_GET['id'];
+    $res = $mysqli->query("SELECT
+    plato.id, plato.titulo, plato.comensales, plato.tipo,
+    ingrediente.id, ingrediente.nombre, ingrediente.cantidad
+    FROM plato
+    JOIN plato_ingrediente
+    ON plato.id = plato_ingrediente.PlatoId
+    JOIN ingrediente
+    ON ingrediente.id = plato_ingrediente.IngredienteId
+    WHERE $id = plato.id");
+
+
+
+
+
+
+
+<table>
                 <thead>
                   <tr>
                     <th>Ingredientes</th>
@@ -57,12 +73,4 @@
                     <td>' . $reg['cantidad'] . '</td>
                   </tr>
                 </tbody>
-                </table>
-
-                <a class="boton flex" href="./cartaPlatos.php">atras</a>            
-            </div>
-
-
-        </div>
-        ';
-    
+                </table>*/
