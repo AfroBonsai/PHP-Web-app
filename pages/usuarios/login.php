@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     include '../header.php';
     require '../../database/db_connect.php';
     $mysqli = conectar();
