@@ -1,5 +1,5 @@
 <?php
-      session_start();
+session_start();
       if (!isset($_SESSION['accesoAdmin'])) {
 
         echo '
@@ -14,11 +14,11 @@
               <title>Document</title>
             </head>
 
-            <body>
-              <div class="header flex">
-                <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/usuarios/registroUsuario.php">Registrarse</a>;
+            <body class="container">
+              <div class="col-12 header flex">
+                <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/usuarios/registroUsuario.php">Registrarse</a>
               </div>
-              <div class="oro"></div>
+              <div class="col-12 oro"></div>
             </body>
             ';
 
@@ -36,7 +36,7 @@
               <title>Document</title>
             </head>
 
-            <body>
+            <body class="container">
               <div class="header flex">
                 <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/user/cartaPlatos.php">Carta</a>
                 <a class="boton flex"href="http://localhost:80/PHP-Web-app/pages/usuarios/perfilUsuario.php">Perfil</a>
@@ -60,7 +60,7 @@
               <title>Document</title>
             </head>
 
-            <body>
+            <body class="container">
               <div class="header flex">
                 <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/platos/cartaPlatos.php">Platos</a>
                 <a class="boton flex" href="http://localhost:80/PHP-Web-app/pages/usuarios/mostrarUsuarios.php">Usuarios</a>
