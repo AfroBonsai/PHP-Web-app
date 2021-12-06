@@ -14,13 +14,13 @@
             <label for="nombre">Nombre</label>
             </div>
             <div class="p-3">
-            <input type="text" name="nombre" />
+            <input type="text" name="nombre" class="rounded" />
             </div>
             <div  class="p-3">
             <label for="cantidad">Cantidad</label>
             </div>
             <div>
-            <input type="number" name="cantidad" />
+            <input type="number" name="cantidad" class="rounded" />
             </div>
             <div class="pt-4">        
             <input type="submit" value="Crear" class="boton btn-primary btn-sm rounded-pill w-25"/>

@@ -21,13 +21,13 @@
         <label for="nombre">Nombre</label>
         </div>
         <div class="p-3">
-        <input type="text" name="nombre" value="<?php echo $nombre;?>" pattern="^[A-Za-z]{3,16}$" title="Min. 3 caracteres y solo admite letras" required/>
+        <input type="text" class="rounded" name="nombre" value="<?php echo $nombre;?>" pattern="^[A-Za-z]{3,16}$" title="Min. 3 caracteres y solo admite letras" required/>
         </div>
         <div>
         <label for="email">Email</label>
         </div>
         <div class="p-3">
-        <input type="email" name="email" value="<?php echo $email;?>" required/>
+        <input type="email" name="email" class="rounded" value="<?php echo $email;?>" required/>
         </div>
         <div>
         <label for="accesoAdmin">Admin</label>

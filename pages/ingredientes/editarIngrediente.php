@@ -19,16 +19,16 @@
         <label for="nombre">Ingrediente</label>
         </div>
         <div class="p-3">
-        <input type="text" name="nombre" value="<?php echo $nombre;?>" pattern="^[A-Za-z0-9 ]{3,30}$" title="Min. 3 caracteres y sin caracteres especiales" required/>
+        <input type="text" name="nombre" class="rounded" value="<?php echo $nombre;?>" pattern="^[A-Za-z0-9 ]{3,30}$" title="Min. 3 caracteres y sin caracteres especiales" required/>
         </div>
         <div>
         <label for="cantidad">Cantidad</label>
         </div>
         <div>
-        <input type="number" name="cantidad" value="<?php echo $cantidad;?>" min="1" required/>
+        <input type="number" name="cantidad" class="rounded" value="<?php echo $cantidad;?>" min="1" required/>
         </div>
         <div>
-        <input type="hidden" name="id" value="<?php echo $id;?>" />
+        <input type="hidden" name="id" class="rounded" value="<?php echo $id;?>" />
         </div>
         <div  class="p-5">
         <input type="submit" value="Editar" class="btn-primary btn-sm rounded-pill w-20" />
