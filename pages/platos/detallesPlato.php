@@ -17,7 +17,7 @@
 
     echo '
     
-    <div class="main bgmain flexColumn d-flex justify-content-center text-center align-items-center shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="main bgmain flexColumn d-flex justify-content-center text-center align-items-center shadow-lg p-3 mb-5 rounded">
         <div class="form flexColumn border p-5 flex justify-content-center text-center align-items-center  shadow-lg p-3 mb-5 rounded">
             <h1>Detalle de ' . ($_GET["titulo"]) . '</h1> 
                 <ul class="p-5">
