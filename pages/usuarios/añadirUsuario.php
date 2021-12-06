@@ -6,7 +6,7 @@
 ?>
 
         <div class="main flex">
-            <form class=" form flexColumn" action="añadir.php" method="post">
+            <form class="form flexColumn" action="añadir.php" method="post">
                 <h1>Añadir Usuario</h1>
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" placeholder="Nombre" pattern="^[A-Za-z0-9]{3,16}$" title="Min. 3 caracteres y solo admite letras y numeros" required/>
