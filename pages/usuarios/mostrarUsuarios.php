@@ -35,7 +35,7 @@
     }
     echo '
         </table>
-        <a class="btn btn-info btn-sm mt-2 flex peq rounded-pill" href="./añadirUsuario.php">Añadir Usuario</a>
+        <a class="btn btn-primary btn-sm mt-2 flex peq rounded-pill" href="./añadirUsuario.php">Añadir Usuario</a>
     </div>
     ';
 
