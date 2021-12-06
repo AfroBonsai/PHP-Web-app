@@ -14,14 +14,14 @@
 
     //Imprime el resultado
     echo '
-        <div class="main d-flex justify-content-center text-center align-items-center">
-            <div class="form flexColumn bgmain p-5 shadow-lg mb-5 bg-white rounded">
-                <h1>Lista de Usuarios</h1>
+        <div class="main d-flex justify-content-center text-center align-items-center bgmain">
+            <div class="form flexColumn  p-5 border shadow-lg mb-5  rounded">
+                <h1 class="p-3">Lista de Usuarios</h1>
                 <table class="d-flex justify-content-center text-center align-items-center p-5">
-                <tr>
-                    <th>Ver Detalles</th>
-                    <th>Editar</th>
-                    <th>Eliminar</th>
+                <tr class="p-3">
+                    <th class="p-3">Ver Detalles</th>
+                    <th class="p-3">Editar</th>
+                    <th class="p-3">Eliminar</th>
                 </tr>
         ';
     while ($reg = $resultado->fetch_assoc()) {
@@ -35,7 +35,7 @@
     }
     echo '
         </table>
-        <a class="btn btn-primary btn-sm mt-2 flex peq" href="./añadirUsuario.php">Añadir Usuario</a>
+        <a class="btn btn-info btn-sm mt-2 flex peq rounded-pill" href="./añadirUsuario.php">Añadir Usuario</a>
     </div>
     ';
 

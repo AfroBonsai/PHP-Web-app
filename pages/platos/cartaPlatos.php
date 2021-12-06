@@ -14,11 +14,11 @@
 
     //Imprime el resultado
     echo '
-        <div class="main d-flex justify-content-center text-center align-items-center">
-            <div class="form flexColumn bgmain p-5 flex justify-content-center text-center align-items-center bg-dark shadow-lg p-3 mb-5 bg-white rounded">
-                <h1 class="text-center">Carta de Platos</h1>
+        <div class="main d-flex justify-content-center text-center align-items-center bgmain">
+            <div class="form flexColumn p-5 flex justify-content-center text-center align-items-center border shadow-lg p-3 mb-5  rounded">
+                <h1 class="text-center p-3">Carta de Platos</h1>
                 <table class=" d-flex justify-content-center text-center align-items-center pb-4">
-                    <tr m-3>
+                    <tr>
                         <th>Ver Detalles</th>
                         <th>Editar</th>
                         <th>Eliminar</th>

@@ -14,13 +14,13 @@
 
     //Imprime el resultado
     echo '
-        <div class="main d-flex justify-content-center text-center align-items-center">
-            <div class="form bgmain p-5 border rounded">
+        <div class="main d-flex justify-content-center text-center align-items-center bgmain">
+            <div class="form border shadow-lg p-5 rounded">
                 <ol>
         ';
     while ($reg = $resultado->fetch_assoc()) {
         echo '
-                <li class="border-bottom p-5 d-flex justify-content-center text-center align-items-center">
+                <li class="border-bottom p-5 align-items-center">
                     <a href="./detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a>
                 </li>
                 ';
