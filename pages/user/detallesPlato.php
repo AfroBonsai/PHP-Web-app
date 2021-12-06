@@ -10,18 +10,17 @@
     $reg=$res->fetch_assoc();
 
     //Muestra Datos
-
     echo '
-        <div class="main flexColumn d-flex justify-content-center text-center align-items-center">
-            <div class="form flexColumn ">
+        <div class="main d-flex justify-content-center text-center align-items-center">
+            <div class="form flexColumn bgmain border rounded p-5">
                 <h1>Detalle de ' . ($_GET["titulo"]) . '</h1>
-                <ul class="border">
-                    <li>Identificador: '.$reg['id'].'</li>
-                    <li>Nombre del plato: '.$reg['titulo'].'</li>
-                    <li>Numero de comensales: '.$reg['comensales'].'</li>
-                    <li>Tipo de Plato: '.$reg['tipo'].'</li>
+                <ul>
+                    <li class="p-2">Identificador: '.$reg['id'].'</li>
+                    <li class="p-2">Nombre del plato: '.$reg['titulo'].'</li>
+                    <li class="p-2">Numero de comensales: '.$reg['comensales'].'</li>
+                    <li class="p-2">Tipo de Plato: '.$reg['tipo'].'</li>
                 </ul>
-                <a class="btn btn-secondary btn-sm mt-2 flex peq" href="./cartaPlatos.php">atras</a>
+                <a class="btn btn-primary rounded-pill btn-sm mt-2 flex peq" href="./cartaPlatos.php">atras</a>
             </div>
         </div>
         ';

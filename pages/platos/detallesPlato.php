@@ -17,19 +17,19 @@
 
     echo '
     
-    <div class="main flexColumn">
-        <div class="form flexColumn">
+    <div class="main flexColumn d-flex justify-content-center text-center align-items-center shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="form flexColumn bgmain p-5 flex justify-content-center text-center align-items-center bg-dark shadow-lg p-3 mb-5 bg-white rounded">
             <h1>Detalle de ' . ($_GET["titulo"]) . '</h1> 
-                <ul>
-                    <li>Identificador: '.$reg['id'].'</li>
-                    <li>Nombre del plato: '.$reg['titulo'].'</li>
-                    <li>Numero de comensales: '.$reg['comensales'].'</li>
-                    <li>Tipo de Plato: '.$reg['tipo'].'</li>
+                <ul class="p-5">
+                    <li class="p-2">Identificador: '.$reg['id'].'</li>
+                    <li class="p-2">Nombre del plato: '.$reg['titulo'].'</li>
+                    <li class="p-2">Numero de comensales: '.$reg['comensales'].'</li>
+                    <li class="p-2">Tipo de Plato: '.$reg['tipo'].'</li>
                 </ul>
                                 
                 
                 
-                <a class="boton flex" href="./cartaPlatos.php">atras</a>
+                <a class="btn btn-primary rounded-pill btn-sm mt-2 flex peq" href="./cartaPlatos.php">atras</a>
             </div>
 
         </div>

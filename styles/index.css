@@ -6,13 +6,24 @@
 html,
 body {
   margin: 0;
+ 
 }
 .main {
-  background-color: lightcoral;
-  height: 90vh;
+  background-color: white;
+  height: 94vh;
 }
-.header{
-  height: 10vh;
+.bgmain{
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);;
+}
+li{
+  list-style:none;
+}
+h1{
+  color:salmon;
+}
+input{
+  background-color: #eee;
+    border: 0;
 }
 /* a {
   text-decoration: none;

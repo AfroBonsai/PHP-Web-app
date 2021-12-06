@@ -15,29 +15,29 @@
     //Imprime el resultado
     echo '
         <div class="main flex d-flex justify-content-center text-center align-items-center">
-            <div class="form flexColumn border">
+            <div class="form flexColumn border bgmain p-5 shadow-lg mb-5 bg-white rounded">
                 <h1>Lista Ingredientes</h1>
-                <table class="border">
-                    <tr class="border">
-                        <th class="border">Ingrediente</th>
-                        <th  class="border">Cantidad</th>
-                        <th  class="border">Editar</th>
-                        <th  class="border">Eliminar</th>
+                <table class="p-5">
+                    <tr>
+                        <th class="p-2">Ingrediente</th>
+                        <th class="p-2">Cantidad</th>
+                        <th class="p-2">Editar</th>
+                        <th class="p-2">Eliminar</th>
                     </tr>
             ';
     while ($reg = $resultado->fetch_assoc()) {
         echo '
-            <tr>
-                <td  class="border"><p>' . $reg['nombre'] . '</p></td>
-                <td  class="border"><p>' . $reg['cantidad'] . '</p></td>
-                <td><a class="btn btn-secondary btn-sm mt-2 flex peq border" href="./editarIngrediente.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&cantidad=' . $reg['cantidad'] . '"> EDITAR</a></td>
-                <td><a class="btn btn-secondary btn-sm mt-2 flex peq border-secondary" href="./eliminarIngrediente.php?id=' . $reg['id'] .'"> ELIMINAR</a></td>
+            <tr  class="p-2">
+                <td  class="p-2"><p>' . $reg['nombre'] . '</p></td>
+                <td  class="p-2"><p>' . $reg['cantidad'] . '</p></td>
+                <td  class="p-2"><a class="btn btn-secondary btn-sm mt-2 flex peq" href="./editarIngrediente.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&cantidad=' . $reg['cantidad'] . '"> EDITAR</a></td>
+                <td  class="p-2"><a class="btn btn-secondary btn-sm mt-2 flex peq" href="./eliminarIngrediente.php?id=' . $reg['id'] .'"> ELIMINAR</a></td>
             </tr>
             ';
     }
     echo '
-            </table>
-            <a class="btn btn-primary btn-sm mt-2 flex peq" href="./crearIngrediente.php">Crear ingrediente</a>
+            </table >
+            <a class="btn btn-primary btn-sm mt-2 flex peq rounded-pill" href="./crearIngrediente.php">Crear ingrediente</a>
         </div>
     </div>';
 
