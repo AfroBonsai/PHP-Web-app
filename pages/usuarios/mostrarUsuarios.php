@@ -14,28 +14,28 @@
 
     //Imprime el resultado
     echo '
-        <div class="main flex">
-            <div class="form flexColumn">
+        <div class="main d-flex justify-content-center text-center align-items-center">
+            <div class="form flexColumn border">
                 <h1>Lista de Usuarios</h1>
-                <table>
+                <table class="d-flex justify-content-center text-center align-items-center">
                 <tr>
-                    <th>Ver Detalles</th>
-                    <th>Editar</th>
-                    <th>Eliminar</th>
+                    <th  class="border">Ver Detalles</th>
+                    <th  class="border">Editar</th>
+                    <th  class="border">Eliminar</th>
                 </tr>
         ';
     while ($reg = $resultado->fetch_assoc()) {
         echo '
                 <tr>
-                    <td><a href="./detallesUsuario.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '">' . $reg['nombre'] . '</a></td>
-                    <td><a class="boton flex peq" href="./editarUsuario.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&email=' . $reg['email'] . '&accesoAdmin=' . $reg['accesoAdmin'] . '">editar</a></td>
-                    <td><a class="boton flex peq" href="./eliminarUsuario.php?id=' . $reg['id'] .'">eliminar</a></td>
+                    <td  class="border"><a href="./detallesUsuario.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '">' . $reg['nombre'] . '</a></td>
+                    <td  class="border"><a class="btn btn-secondary btn-sm mt-2 flex peq" href="./editarUsuario.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&email=' . $reg['email'] . '&accesoAdmin=' . $reg['accesoAdmin'] . '">editar</a></td>
+                    <td  class="border"><a class="btn btn-secondary btn-sm mt-2 flex peq" href="./eliminarUsuario.php?id=' . $reg['id'] .'">eliminar</a></td>
                 </tr>
             ';
     }
     echo '
         </table>
-        <a class="boton flex" href="./añadirUsuario.php">Añadir Usuario</a>
+        <a class="btn btn-primary btn-sm mt-2 flex peq" href="./añadirUsuario.php">Añadir Usuario</a>
     </div>
     ';
 

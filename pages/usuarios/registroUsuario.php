@@ -2,8 +2,8 @@
 include '../header.php';
 ?>
 
-        <div class="main flex">
-            <form class=" form flexColumn" action="registro.php" method="post">
+        <div class="main d-flex justify-content-center text-center align-items-center">
+            <form class="form flexColumn" action="registro.php" method="post">
                 <h1>Registrarse</h1>
                 <input type="text" name="nombre" placeholder="Nombre" pattern="^[A-Za-z0-9]{3,16}$" title="Min. 3 caracteres y solo admite letras y numeros" required/>
                 <input type="email" name="email" placeholder="Email" required/>

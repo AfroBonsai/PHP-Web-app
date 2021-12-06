@@ -18,10 +18,10 @@
             <div class="form flexColumn border w-auto p-3 flex justify-content-center text-center align-items-center">
                 <h1 class="text-center">Carta de Platos</h1>
                 <table class=" d-flex justify-content-center text-center align-items-center">
-                    <tr>
-                        <th>Ver Detalles</th>
-                        <th>Editar</th>
-                        <th>Eliminar</th>
+                    <tr class="border">
+                        <th class="border">Ver Detalles</th>
+                        <th class="border">Editar</th>
+                        <th class="border">Eliminar</th>
                     </tr>
             ';
     while ($reg = $resultado->fetch_assoc()) {

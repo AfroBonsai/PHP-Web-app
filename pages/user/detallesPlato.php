@@ -13,9 +13,9 @@
 
     echo '
         <div class="main flexColumn d-flex justify-content-center text-center align-items-center">
-            <div class="form flexColumn">
+            <div class="form flexColumn ">
                 <h1>Detalle de ' . ($_GET["titulo"]) . '</h1>
-                <ul>
+                <ul class="border">
                     <li>Identificador: '.$reg['id'].'</li>
                     <li>Nombre del plato: '.$reg['titulo'].'</li>
                     <li>Numero de comensales: '.$reg['comensales'].'</li>

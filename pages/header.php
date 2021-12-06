@@ -25,10 +25,10 @@
                 <div class="collapse navbar-collapse justify-content-md-center" id="collapse">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="http://localhost:80/dev/PHP-Web-app/pages/user/recuperarContraseña.php">Recuperar Contraseña</a>
+                      <a class="nav-link" aria-current="page" href="http://localhost:80/dev/PHP-Web-app/pages/usuarios/recuperarContraseña.php">Recuperar Contraseña</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost:80/dev/PHP-Web-app/pages/user/registroUsuario.php">Registro</a>
+                      <a class="nav-link" href="http://localhost:80/dev/PHP-Web-app/pages/usuarios/registroUsuario.php">Registro</a>
                     </li>
                   </ul>
                 </div>
