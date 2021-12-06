@@ -14,30 +14,30 @@
 
     //Imprime el resultado
     echo '
-        <div class="main flex">
-            <div class="form flexColumn">
+        <div class="main flex d-flex justify-content-center text-center align-items-center">
+            <div class="form flexColumn border">
                 <h1>Lista Ingredientes</h1>
-                <table>
-                    <tr>
-                        <th>Ingrediente</th>
-                        <th>Cantidad</th>
-                        <th>Editar</th>
-                        <th>Eliminar</th>
+                <table class="border">
+                    <tr class="border">
+                        <th class="border">Ingrediente</th>
+                        <th  class="border">Cantidad</th>
+                        <th  class="border">Editar</th>
+                        <th  class="border">Eliminar</th>
                     </tr>
             ';
     while ($reg = $resultado->fetch_assoc()) {
         echo '
             <tr>
-                <td><p>' . $reg['nombre'] . '</p></td>
-                <td><p>' . $reg['cantidad'] . '</p></td>
-                <td><a class="boton flex peq" href="./editarIngrediente.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&cantidad=' . $reg['cantidad'] . '"> EDITAR</a></td>
-                <td><a class="boton flex peq" href="./eliminarIngrediente.php?id=' . $reg['id'] .'"> ELIMINAR</a></td>
+                <td  class="border"><p>' . $reg['nombre'] . '</p></td>
+                <td  class="border"><p>' . $reg['cantidad'] . '</p></td>
+                <td><a class="btn btn-secondary btn-sm mt-2 flex peq border" href="./editarIngrediente.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&cantidad=' . $reg['cantidad'] . '"> EDITAR</a></td>
+                <td><a class="btn btn-secondary btn-sm mt-2 flex peq border-secondary" href="./eliminarIngrediente.php?id=' . $reg['id'] .'"> ELIMINAR</a></td>
             </tr>
             ';
     }
     echo '
             </table>
-            <a class="boton flex" href="./crearIngrediente.php">Crear ingrediente</a>
+            <a class="btn btn-primary btn-sm mt-2 flex peq" href="./crearIngrediente.php">Crear ingrediente</a>
         </div>
     </div>';
 

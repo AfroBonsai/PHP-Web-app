@@ -12,7 +12,7 @@
     //Muestra Datos
 
     echo '
-        <div class="main flexColumn">
+        <div class="main flexColumn d-flex justify-content-center text-center align-items-center">
             <div class="form flexColumn">
                 <h1>Detalle de ' . ($_GET["titulo"]) . '</h1>
                 <ul>
