@@ -21,7 +21,7 @@
                     <li>Numero de comensales: '.$reg['comensales'].'</li>
                     <li>Tipo de Plato: '.$reg['tipo'].'</li>
                 </ul>
-                <a class="boton flex" href="./cartaPlatos.php">atras</a>
+                <a class="btn btn-secondary btn-sm mt-2 flex peq" href="./cartaPlatos.php">atras</a>
             </div>
         </div>
         ';

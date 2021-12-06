@@ -7,8 +7,14 @@ html,
 body {
   margin: 0;
 }
-
-a {
+.main {
+  background-color: lightcoral;
+  height: 90vh;
+}
+.header{
+  height: 10vh;
+}
+/* a {
   text-decoration: none;
   color: white;
 }
@@ -32,11 +38,9 @@ a:hover {
   align-items: center;
 }
 
-/* HEADER */
-
-.header {
+/* .header {
   background-color: #c06868;
-  height: 10vh;
+  height: 20vh;
   justify-content: right;
 }
 
@@ -65,9 +69,7 @@ a:hover {
   font-size: 0.7em;
 }
 
-.main {
-  height: 85vh;
-}
+
 
 .form {
   padding: 2em;
@@ -103,3 +105,5 @@ td {
   padding: 1em;
   color: white;
 }
+
+ */
