@@ -24,6 +24,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-md-center" id="collapse">
                   <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="https://aadg-api-restaurante.herokuapp.com/pages/usuarios/loginUsuario.php">Login</a>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link" aria-current="page" href="https://aadg-api-restaurante.herokuapp.com/pages/usuarios/recuperarContraseña.php">Recuperar Contraseña</a>
                     </li>

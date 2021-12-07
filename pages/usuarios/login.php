@@ -38,12 +38,12 @@
             
                 // SI EL USUARIO EXISTE PERO EL PASSWORD NO COINCIDE IMPRIMIR EN PANTALLA PASSWORD INCORRECTO
         
-                else { echo '<div class="main flexColumn"><h2 class="error">Contraseña Incorrecta</h2><a class="boton flex" href="../../index.php">Volver</a></div>'; }
+                else { echo '<div class="main d-flex justify-content-center bgmain text-center align-items-center"><h2 class="error">Contraseña Incorrecta</h2><a class="btn btn-info btn-sm mt-2 flex peq rounded-pill w-15" href="../../index.php">Volver</a></div>'; }
 
             }  
         
                     // SI EL USUARIO NO EXISTE MOSTRAR USUARIO INCORRECTO
-            else { echo '<div class="main flexColumn"><h2 class="error">Usuario Incorrecto</h2><a class="boton flex" href="../../index.php">Volver</a></div>'; }
+            else { echo '<div class="main d-flex justify-content-center bgmain text-center align-items-center"><h2 class="error">Usuario Incorrecto</h2><a class="btn btn-info btn-sm mt-2 flex peq rounded-pill w-15" href="../../index.php">Volver</a></div>'; }
 
         $stmt->close();
     } 

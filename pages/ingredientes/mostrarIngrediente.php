@@ -41,6 +41,4 @@
         </div>
     </div>';
 
-//<td><a href="./detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a></td>
-
 ?>
