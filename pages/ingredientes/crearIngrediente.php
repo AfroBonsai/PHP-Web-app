@@ -7,15 +7,25 @@
     
 ?>
 
-    <div class="main flex">
-        <form class=" form flexColumn" action="añadirIngrediente.php" method="post">
-            <h1>Añadir Ingrediente</h1>
+    <div class="main d-flex justify-content-center text-center align-items-center bgmain">
+        <form class=" form shadow-lg p-3 mb-5 border rounded" action="añadirIngrediente.php" method="post">
+            <h1 class="p-3">Añadir Ingrediente</h1>
+            <div>
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" />
+            </div>
+            <div class="p-3">
+            <input type="text" name="nombre" class="rounded" />
+            </div>
+            <div  class="p-3">
             <label for="cantidad">Cantidad</label>
-            <input type="number" name="cantidad" />           
-            <input type="submit" value="Crear" class="boton flex"/>
-            <a class="boton flex" href="./mostrarIngrediente.php">Atrás</a>
+            </div>
+            <div>
+            <input type="number" name="cantidad" class="rounded" />
+            </div>
+            <div class="pt-4">        
+            <input type="submit" value="Crear" class="boton btn-primary btn-sm rounded-pill w-25"/>
+            <a class="boton btn-info btn-sm rounded-pill w-25" href="./mostrarIngrediente.php">Atrás</a>
+            </div>
         </form>
     </div>
 </body>

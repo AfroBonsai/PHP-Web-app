@@ -14,28 +14,28 @@
 
     //Imprime el resultado
     echo '
-        <div class="main flex">
-            <div class="form flexColumn">
-                <h1>Lista de Usuarios</h1>
-                <table>
-                <tr>
-                    <th>Ver Detalles</th>
-                    <th>Editar</th>
-                    <th>Eliminar</th>
+        <div class="main d-flex justify-content-center text-center align-items-center bgmain">
+            <div class="form flexColumn  p-5 border shadow-lg mb-5  rounded">
+                <h1 class="p-3">Lista de Usuarios</h1>
+                <table class="d-flex justify-content-center text-center align-items-center p-5">
+                <tr class="p-3">
+                    <th class="p-3">Ver Detalles</th>
+                    <th class="p-3">Editar</th>
+                    <th class="p-3">Eliminar</th>
                 </tr>
         ';
     while ($reg = $resultado->fetch_assoc()) {
         echo '
                 <tr>
                     <td><a href="./detallesUsuario.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '">' . $reg['nombre'] . '</a></td>
-                    <td><a class="boton flex peq" href="./editarUsuario.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&email=' . $reg['email'] . '&accesoAdmin=' . $reg['accesoAdmin'] . '">editar</a></td>
-                    <td><a class="boton flex peq" href="./eliminarUsuario.php?id=' . $reg['id'] .'">eliminar</a></td>
+                    <td><a class="btn btn-secondary btn-sm mt-2 flex peq" href="./editarUsuario.php?id=' . $reg['id'] . '&nombre=' . $reg['nombre'] . '&email=' . $reg['email'] . '&accesoAdmin=' . $reg['accesoAdmin'] . '">editar</a></td>
+                    <td><a class="btn btn-secondary btn-sm mt-2 flex peq" href="./eliminarUsuario.php?id=' . $reg['id'] .'">eliminar</a></td>
                 </tr>
             ';
     }
     echo '
         </table>
-        <a class="boton flex" href="./añadirUsuario.php">Añadir Usuario</a>
+        <a class="btn btn-primary btn-sm mt-2 flex peq rounded-pill" href="./añadirUsuario.php">Añadir Usuario</a>
     </div>
     ';
 

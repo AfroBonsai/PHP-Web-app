@@ -14,10 +14,10 @@
 
     //Imprime el resultado
     echo '
-        <div class="main flex">
-            <div class="form flexColumn">
-                <h1>Carta de Platos</h1>
-                <table>
+        <div class="main d-flex justify-content-center text-center align-items-center bgmain">
+            <div class="form flexColumn p-5 flex justify-content-center text-center align-items-center border shadow-lg p-3 mb-5  rounded">
+                <h1 class="text-center p-3">Carta de Platos</h1>
+                <table class=" d-flex justify-content-center text-center align-items-center pb-4">
                     <tr>
                         <th>Ver Detalles</th>
                         <th>Editar</th>
@@ -27,16 +27,16 @@
     while ($reg = $resultado->fetch_assoc()) {
         
         echo '
-            <tr>
+            <tr class="text-center">
                 <td><a href="./detallesPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '">' . $reg['titulo'] . '</a></td>
-                <td><a class="boton flex peq" href="./editarPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '&comensales=' . $reg['comensales'] . '"> EDITAR</a></td>
-                <td><a class="boton flex peq" href="./eliminarPlato.php?id=' . $reg['id'] .'"> ELIMINAR</a></td>
+                <td class="p-3"><a class="btn btn-secondary btn-sm mt-2 flex peq" href="./editarPlato.php?id=' . $reg['id'] . '&titulo=' . $reg['titulo'] . '&comensales=' . $reg['comensales'] . '"> EDITAR</a></td>
+                <td><a class="btn btn-secondary btn-sm mt-2  flex peq" href="./eliminarPlato.php?id=' . $reg['id'] .'"> ELIMINAR</a></td>
             </tr>
             ';
     }
     echo '
             </table>
-            <a class="boton flex" href="./crearPlato.php">Crear plato</a>
+            <a class="btn btn-primary btn-sm btn-block flex " href="./crearPlato.php">Crear plato</a>
         </div>
     </div>';
 
