@@ -19,18 +19,18 @@
         
         // SI EL USUARIO EXISTE EN LA TABLA SE EXTRAE Y SE APUNTA SU NOMBRE Y SU CLAVE
             if ($stmt->num_rows > 0){
-                $stmt->bind_result($id, $nombre, $email, $contraseña, $accesoAdmin);
+                $stmt->bind_result($id, $nombre, $email, $contrasena, $accesoAdmin);
                 $stmt->fetch();
                 
                 // AHORA VERIFICA SI LA CONTRASEÑA QUE SE EXTRAJO DE LA TABLA ES IGUAL A LA QUE SE ENVIA DESDE EL FORMULARIO         
-                if($_POST["contrasena"] === $contraseña) {
+                if($_POST["contrasena"] === $contrasena) {
                     // SI COINICIDEN AMBAS CONTRASEÑAS SE INICIA LA SESION Y SE LE DA LA BIENVENIDA AL USUARIO CON ECHO
                     session_regenerate_id();
                     $_SESSION['loggedin'] = TRUE;
                     $_SESSION['id'] = $id;
                     $_SESSION['nombre'] = $nombre;
                     $_SESSION['email'] = $email;
-                    $_SESSION['contrasena'] = $contraseña;
+                    $_SESSION['contrasena'] = $contrasena;
                     $_SESSION['accesoAdmin'] = $accesoAdmin;
                     echo 'BIENVENIDO USUARIO : ' . $_SESSION['nombre'] .'!';
                     header('Location: ./perfilUsuario.php');

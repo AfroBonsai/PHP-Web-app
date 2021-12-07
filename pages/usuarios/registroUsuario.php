@@ -12,7 +12,7 @@ include '../header.php';
                 <input class="form-control-sm" type="email" name="email" placeholder="Email" required/>
                 </div>
                 <div class="p-3">
-                <input class="form-control-sm" type="password" name="contraseña" placeholder="Contraseña" pattern="^.{4,20}$" title="Min. 4 caracteres" required/>
+                <input class="form-control-sm" type="password" name="contrasena" placeholder="Contraseña" pattern="^.{4,20}$" title="Min. 4 caracteres" required/>
                 </div>
                 <input type="submit" value="Registrar" class="btn btn-secondary btn-sm mt-2 flex peq"/>
                 <a class="btn btn-info btn-sm mt-2 flex peq" href="../../index.php">Volver</a>

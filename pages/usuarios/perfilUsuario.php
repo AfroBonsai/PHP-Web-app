@@ -12,7 +12,7 @@
             <H1 class="p-3">Bienvenidx <?=$_SESSION['nombre']?></H1>
             <p  class="p-3">Tu id de usuario: <?=$_SESSION['id']?></p>
             <p  class="p-3">Tu correo: <?=$_SESSION['email']?></p>
-            <p  class="p-3">Tu Contraseña: <?=$_SESSION['contraseña']?></p>
+            <p  class="p-3">Tu Contraseña: <?=$_SESSION['contrasena']?></p>
             <a class="btn btn-info btn-sm mt-2 flex peq rounded-pill"href='logout.php'>Cerrar Sesión</a>
         </div>
     </div>

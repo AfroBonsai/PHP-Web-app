@@ -16,7 +16,7 @@ include '../header.php';
     <label for="password" class="form-label p-1">Password</label>
     </div> 
     <div>
-    <input type="password" class="form-control-sm "  name="contraseña" placeholder="contraseña">
+    <input type="password" class="form-control-sm "  name="contrasena" placeholder="contraseña">
     </div> 
     <div class="pt-3">
     <input type="submit" class="btn btn-info btn-sm mt-2 rounded-pill w-75 " value="Login" class="boton" />

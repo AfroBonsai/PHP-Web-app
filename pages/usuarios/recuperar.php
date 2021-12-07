@@ -15,7 +15,7 @@
         <div class="main d-flex justify-content-center text-center align-items-center bgmain">
             <div class="shadow-lg p-3 mb-5 border  rounded">
                 <h1>Contraseña de ' . ($_POST["email"]) . '</h1>
-                <p>Contraseña: '.$reg['contraseña'].'</p>
+                <p>Contraseña: '.$reg['contrasena'].'</p>
                 <a class="btn btn-info btn-sm mt-2 flex peq rounded-pill w-15" href="../../index.php">atras</a>
             </div>
         </div>
