@@ -19,10 +19,10 @@
                 </div>
                 <input type="email" name="email" placeholder="Email" required/>
                 <div>
-                <label for="contraseña">Contraseña</label>
+                <label for="contrasena">Contraseña</label>
                 </div>
                 <div>
-                <input type="password" name="contraseña" placeholder="Contraseña" pattern="^.{4,20}$" title="Min. 4 caracteres" required/>
+                <input type="password" name="contraseña" placeholder="Contraseña" pattern="^.{8,20}$" title="Min. 8 caracteres" required/>
                 </div>
                 <div class="pt-2">
                 <label for="admin">Tipo de Usuario</label>

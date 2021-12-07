@@ -4,7 +4,7 @@
     require '../../database/db_connect.php';
     $mysqli = conectar();
 
-    if ( !isset($_POST['email'], $_POST['contraseña']) )
+    if ( !isset($_POST['email'], $_POST['contrasena']) )
             {
 			// Could not get the data that should have been sent.
 			exit('Por favor llene los datos para iniciar sesión!');
@@ -12,7 +12,7 @@
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    if ($stmt = $mysqli->prepare('SELECT id, nombre, email, contraseña, accesoAdmin FROM usuario WHERE email = ?')) {
+    if ($stmt = $mysqli->prepare('SELECT id, nombre, email, contrasena, accesoAdmin FROM usuario WHERE email = ?')) {
         $stmt->bind_param('s', $_POST["email"]);
         $stmt->execute();
         $stmt->store_result();
@@ -23,14 +23,14 @@
                 $stmt->fetch();
                 
                 // AHORA VERIFICA SI LA CONTRASEÑA QUE SE EXTRAJO DE LA TABLA ES IGUAL A LA QUE SE ENVIA DESDE EL FORMULARIO         
-                if($_POST["contraseña"] === $contraseña) {
+                if($_POST["contrasena"] === $contraseña) {
                     // SI COINICIDEN AMBAS CONTRASEÑAS SE INICIA LA SESION Y SE LE DA LA BIENVENIDA AL USUARIO CON ECHO
                     session_regenerate_id();
                     $_SESSION['loggedin'] = TRUE;
                     $_SESSION['id'] = $id;
                     $_SESSION['nombre'] = $nombre;
                     $_SESSION['email'] = $email;
-                    $_SESSION['contraseña'] = $contraseña;
+                    $_SESSION['contrasena'] = $contraseña;
                     $_SESSION['accesoAdmin'] = $accesoAdmin;
                     echo 'BIENVENIDO USUARIO : ' . $_SESSION['nombre'] .'!';
                     header('Location: ./perfilUsuario.php');
