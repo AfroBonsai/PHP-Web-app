@@ -7,8 +7,24 @@ html,
 body {
   margin: 0;
 }
-
-a {
+.main {
+  background-color: white;
+  height: 94vh;
+}
+.bgmain{
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);;
+}
+li{
+  list-style:none;
+}
+h1{
+  color:salmon;
+}
+input{
+  background-color: #eee;
+    border: 0;
+}
+/* a {
   text-decoration: none;
   color: white;
 }
@@ -32,11 +48,9 @@ a:hover {
   align-items: center;
 }
 
-/* HEADER */
-
-.header {
+/* .header {
   background-color: #c06868;
-  height: 10vh;
+  height: 20vh;
   justify-content: right;
 }
 
@@ -65,9 +79,7 @@ a:hover {
   font-size: 0.7em;
 }
 
-.main {
-  height: 85vh;
-}
+
 
 .form {
   padding: 2em;
@@ -103,3 +115,5 @@ td {
   padding: 1em;
   color: white;
 }
+
+ */

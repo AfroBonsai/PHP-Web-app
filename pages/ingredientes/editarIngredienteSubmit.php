@@ -12,6 +12,6 @@
     // Consulta
     $mysqli->query("UPDATE ingrediente SET nombre = '$nombre', cantidad = '$cantidad' WHERE id='$id'");
 
-    echo '<div class="main flexColumn"><h2 class="error">Ingrediente editado con éxito</h2><a class="boton flex" href="./mostrarIngrediente.php">Volver</a></div>';
+    echo '<div class="main d-flex justify-content-center text-center align-items-center bgmain"><h2 class="error">Ingrediente editado con éxito</h2><a class="btn-primary btn-sm rounded-pill w-15" href="./mostrarIngrediente.php">Volver</a></div>';
 
 ?>
