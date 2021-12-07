@@ -89,6 +89,8 @@ Si se inicia sesión como Admin se despliegan los nuevos menus, con acceso a los
 
 Aqui se pueden añadir nuevos ingredientes o eliminarlos al acceder como Admin.
 
+<br>
+
 <p aling="center">
   <img src="./Images/ListaIngredientesAdmin.png" width="500" title="hover text">
 </p>
@@ -113,13 +115,15 @@ Aqui se pueden añadir nuevos ingredientes o eliminarlos al acceder como Admin.
 
 Aqui se pueden ver los usuarios editarlos o eliminarlos al acceder como Admin.
 
+<br>
+
 <p aling="center">
   <img src="./Images/ListaUsuariosAdmin.png" width="500" title="hover text">
 </p>
 
 <br>
 
-<h1>Equipo de trabajo</h1>
+<h1>Equipo de trabajo🧰</h1>
 
 </br>
 Este proyecto ha sido realizado por 4 compañeros : Daniel Jesus,  George, Alfonso y Arnold.
