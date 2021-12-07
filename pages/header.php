@@ -70,7 +70,7 @@
                       <a class="nav-link" href="https://aadg-api-restaurante.herokuapp.com/pages/usuarios/perfilUsuario.php">Perfil</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="https://aadg-api-restaurante.herokuapp.com/usuarios/logout.php">Logout</a>
+                      <a class="nav-link" href="https://aadg-api-restaurante.herokuapp.com/pages/usuarios/logout.php">Logout</a>
                     </li>
                   </ul>
                 </div>
