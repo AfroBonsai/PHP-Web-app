@@ -8,7 +8,7 @@
     $email = $_POST['email'];
 
     // Consulta
-    $resultado = $mysqli->query("SELECT contraseña FROM usuario WHERE email='$email'");
+    $resultado = $mysqli->query("SELECT contrasena FROM usuario WHERE email='$email'");
     $reg=$resultado->fetch_assoc();
 
     echo '
